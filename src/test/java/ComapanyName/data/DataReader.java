@@ -17,7 +17,7 @@ public class DataReader {
 	
 	public List<HashMap<String, String>> getJsonDataToMap() throws IOException
 	{
-		//resding json to string 
+		//reading json to string 
 		String jsonContent = FileUtils.readFileToString(new File(System.getProperty("user.dir")+"\\src\\test\\java\\ComapanyName\\data\\PurchaseOrder.json"),
 				StandardCharsets.UTF_8);
 		

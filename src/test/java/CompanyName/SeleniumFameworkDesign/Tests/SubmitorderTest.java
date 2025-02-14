@@ -69,7 +69,7 @@ public class SubmitorderTest extends BaseTest {
 //	map.put("email", "shetty@gmail.com");
 //	map.put("password", "sHETTY@46t877");
 //	map.put("product", "ZARA COAT 3");
-	
+//	return object[][] {{map},{map1}};
 	
 //	@DataProvider
 //	public Object[][] getData()
