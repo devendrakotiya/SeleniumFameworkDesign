@@ -15,7 +15,7 @@ public class LandingPage extends AbstractComponent{
 	public LandingPage(WebDriver driver)
 	{
 		//initializing we can use constructor
-		super(driver);
+		super(driver); // parent const
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
