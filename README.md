@@ -15,3 +15,4 @@ points:
 4. i used hashmap for data providing and also tried to take data from JSON file using getJsonDataToMap(file_path) function
 5. used screenshot utility to take screenshot
 6. used extent report concept in my framework
+7. i used TestNg Listners in my framework to take screenshot when failure occurs
