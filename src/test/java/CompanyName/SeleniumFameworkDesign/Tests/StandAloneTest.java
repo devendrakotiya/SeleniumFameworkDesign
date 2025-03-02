@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -53,7 +54,14 @@ public class StandAloneTest {
 		boolean match = cartproducts.stream().anyMatch(cartproduct-> cartproduct.getText().equalsIgnoreCase(prod));
 		Assert.assertEquals(TRUE, match);
 //		CHECKOUT CLICK IS NOT WORKING
-		driver.findElement(By.cssSelector(".totalRow button")).click();
+		
+		WebElement checkoutButton = driver.findElement(By.xpath("//button[normalize-space()='Checkout']"));
+
+        // Click the button using JavaScript
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", checkoutButton);
+
+//		driver.findElement(By.xpath("//button[normalize-space()='Checkout']")).click();
 		
 //		Drop down handling
 		Actions a = new Actions(driver);

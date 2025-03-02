@@ -39,6 +39,7 @@ public class SubmitorderTest extends BaseTest {
 //		LandingPage landingPage = launchApplication();
 		// now this landingpage variable we can define globally in base test class
 		landingPage.loginApplication(input.get("email"), input.get("password"));
+		
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(prod);
