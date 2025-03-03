@@ -54,6 +54,7 @@ public class StandAloneTest {
 		boolean match = cartproducts.stream().anyMatch(cartproduct-> cartproduct.getText().equalsIgnoreCase(prod));
 		Assert.assertEquals(TRUE, match);
 //		CHECKOUT CLICK IS NOT WORKING
+//		fixed element not clickable exception using JS executor
 		
 		WebElement checkoutButton = driver.findElement(By.xpath("//button[normalize-space()='Checkout']"));
 

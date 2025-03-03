@@ -40,6 +40,7 @@ public class LandingPage extends AbstractComponent{
 	
 	
 	// Action method
+	
 	public void loginApplication(String email, String Password)
 	{
 		userEmail.sendKeys(email);

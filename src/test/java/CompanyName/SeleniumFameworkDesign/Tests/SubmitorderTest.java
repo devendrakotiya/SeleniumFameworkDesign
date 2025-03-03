@@ -42,6 +42,7 @@ public class SubmitorderTest extends BaseTest {
 		
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		List<WebElement> products = productCatalogue.getProductList();
+		
 		productCatalogue.addProductToCart(prod);
 		productCatalogue.goToCart();
 		CartPage cartPage = new CartPage(driver);
